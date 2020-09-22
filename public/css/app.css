@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  font-family: "Nunito Sans", sans-serif;
+  color: #f5eded;
+}
+
+a {
+  font-family: "Cabin Condensed";
+  text-decoration: none;
+  color: #f5eded;
+}
+
+.u-flex {
+  display: flex;
+}
+
+.u-flexC {
+  display: flex;
+  flex-direction: column;
+}
+
+.u-justifyCtr {
+  justify-content: center;
+}
+
+.u-justifyBtw {
+  justify-content: space-between;
+}
+
+.u-alignCtr {
+  align-items: center;
+}
+
+.u-container {
+  width: 960px;
+}
+
+.MainHeader {
+  padding: 15px 15px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.MainHeader h1 {
+  font-size: 4rem;
+  line-height: 70px;
+}
+.MainHeader a {
+  margin: 0 15px;
+  font-size: 1.2rem;
+}
+.MainHeader a:hover {
+  text-decoration: underline;
+}
+
+.Hero {
+  align-items: flex-end;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-image: url("../img/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Hero-info {
+  flex-grow: 3;
+}
+.Hero-info .Container {
+  align-self: flex-end;
+  padding: 30px;
+  width: 400px;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0 15px 0 0;
+  border-left: 5px solid white;
+}
+.Hero-info h1 {
+  font-family: "Cabin condensed";
+}
+.Hero-info span {
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+.Hero-social {
+  flex-grow: 1;
+  margin: 5px 15px;
+}
+.Hero-social a {
+  align-self: flex-end;
+  margin: 0 5px;
+  font-size: 1.4rem;
+}
+.Hero-social a:nth-child(1):hover {
+  color: limegreen;
+}
+.Hero-social a:nth-child(2):hover {
+  color: #3b5998;
+}
+
+/*# sourceMappingURL=app.css.map */
