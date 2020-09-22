@@ -81,6 +81,7 @@ a {
   background: rgba(0, 0, 0, 0.5);
   margin: 0 15px 0 0;
   border-left: 5px solid white;
+  opacity: 1;
 }
 .Hero-info h1 {
   font-family: "Cabin condensed";
