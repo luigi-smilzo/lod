@@ -7,11 +7,3 @@ gsap.from( infoBox, {
     ease: 'linear',
     opacity: 0
 })
-
-cta.onclick = () => {
-    gsap.to( window, {
-        duration: .5,
-        scrollTo: { y:'#Latest', offsetY: -10},
-        ease: 'power1'
-    })
-}
