@@ -4,10 +4,19 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
 body {
   background: #000;
   font-family: "Nunito Sans", sans-serif;
   color: #f5eded;
+  overflow-y: scroll;
+}
+body main section {
+  scroll-snap-align: start;
 }
 
 a {
@@ -38,13 +47,15 @@ a {
 }
 
 .u-container {
-  width: 960px;
+  padding: 25px;
+  min-width: 960px;
 }
 
 .MainHeader {
   padding: 15px 15px;
-  position: absolute;
+  position: sticky;
   width: 100%;
+  height: 100px;
   top: 0;
   left: 0;
   z-index: 2;
@@ -63,6 +74,9 @@ a {
 
 .Hero {
   align-items: flex-end;
+  position: relative;
+  top: -100px;
+  left: 0;
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -72,7 +86,7 @@ a {
   background-size: cover;
 }
 .Hero-info {
-  flex-grow: 3;
+  flex-grow: 2;
 }
 .Hero-info .Container {
   align-self: flex-end;
@@ -85,10 +99,19 @@ a {
 }
 .Hero-info h1 {
   font-family: "Cabin condensed";
+  margin-bottom: 10px;
 }
 .Hero-info span {
+  display: block;
   font-size: 0.8em;
   opacity: 0.7;
+  margin: 5px 0 10px 0;
+}
+.Hero-info .Cta {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #bd4b20;
+  border-radius: 4px;
 }
 .Hero-social {
   flex-grow: 1;
@@ -100,10 +123,23 @@ a {
   font-size: 1.4rem;
 }
 .Hero-social a:nth-child(1):hover {
-  color: limegreen;
+  color: #ff5500;
 }
 .Hero-social a:nth-child(2):hover {
+  color: limegreen;
+}
+.Hero-social a:nth-child(3):hover {
   color: #3b5998;
+}
+
+.Latest {
+  height: 100vh;
+  background: #000;
+}
+.Latest h1 {
+  text-align: center;
+  font-family: "Cabin condensed";
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=app.css.map */
